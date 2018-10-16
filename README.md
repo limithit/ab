@@ -4,7 +4,7 @@ ab is a tool for benchmarking your Apache Hypertext Transfer Protocol (HTTP) ser
 
 #Synopsis
 
-```
+
 ab [ -A auth-username:password ] [ -c concurrency ] [ -C cookie-name=value ] [ -d ] [ -e csv-file ] [ -g gnuplot-file ] [ -h ] [ -H custom-header ] [ -i ] [ -k ] [ -n requests ] [ -p POST-file ] [ -P proxy-auth-username:password ] [ -q ] [ -s ] [ -S ] [ -t timelimit ] [ -T content-type ] [ -v verbosity] [ -V ] [ -w ] [ -x <table>-attributes ] [ -X proxy[:port] ] [ -y <tr>-attributes ] [ -z <td>-attributes ] [http://]hostname[:port]/path
 
 top
@@ -59,4 +59,4 @@ Use a proxy server for the requests.
 String to use as attributes for <tr>.
 -z <td>-attributes
 String to use as attributes for <td>.
-```
+
