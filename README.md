@@ -2,11 +2,10 @@
 ab is a tool for benchmarking your Apache Hypertext Transfer Protocol (HTTP) server. It is designed to give you an impression of how your current Apache installation performs. This especially shows you how many requests per second your Apache installation is capable of serving.
 
 
-#Synopsis
-
+# Synopsis
 ab [ -A auth-username:password ] [ -c concurrency ] [ -C cookie-name=value ] [ -d ] [ -e csv-file ] [ -g gnuplot-file ] [ -h ] [ -H custom-header ] [ -i ] [ -k ] [ -n requests ] [ -p POST-file ] [ -P proxy-auth-username:password ] [ -q ] [ -s ] [ -S ] [ -t timelimit ] [ -T content-type ] [ -v verbosity] [ -V ] [ -w ] [ -x <table>-attributes ] [ -X proxy[:port] ] [ -y <tr>-attributes ] [ -z <td>-attributes ] [http://]hostname[:port]/path
- ``` 
-top
+
+```
 Options
 -A auth-username:password
 Supply BASIC Authentication credentials to the server. The username and password are separated by a single :
@@ -41,7 +40,8 @@ The default is to just perform a single request which usually leads to non-repre
 -p POST-file
 File containing data to POST.
 -P proxy-auth-username:password
-Supply BASIC Authentication credentials to a proxy en-route. The username and password are separated by a single : 
+Supply BASIC Authentication credentials to a proxy en-route.
+The username and password are separated by a single : 
 and sent on the wire base64 encoded. The string is sent regardless of whether
 the proxy needs it (i.e., has sent an 407 proxy authentication needed).
 -q
@@ -56,11 +56,13 @@ when the average and median are more than one or two times the standard deviatio
 And default to the min/avg/max values. (legacy support).
 -t timelimit
 Maximum number of seconds to spend for benchmarking. This implies a -n 50000 internally. 
-Use this to benchmark the server within a fixed total amount of time. Per default there is no timelimit.
+Use this to benchmark the server within a fixed total amount of time. 
+Per default there is no timelimit.
 -T content-type
 Content-type header to use for POST data.
 -v verbosity
-Set verbosity level - 4 and above prints information on headers, 3 and above prints response codes (404, 200, etc.),
+Set verbosity level - 4 and above prints information on headers,
+3 and above prints response codes (404, 200, etc.),
 2 and above prints warnings and info.
 -V
 Display version number and exit.
