@@ -4,3 +4,4 @@ ab is a tool for benchmarking your Apache Hypertext Transfer Protocol (HTTP) ser
 
 `APR and apr_util needs to be installed.`
 
+`yum install apr-devel apr-util-devel` or `apt-get install libapr1-dev libaprutil1-dev`
