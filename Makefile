@@ -5,3 +5,6 @@ ab: ab.c
 
 clean:
 	rm ab
+	
+install:
+	cp ab /usr/sbin
